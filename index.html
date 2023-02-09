@@ -11,7 +11,34 @@
 </head>
 
 <body>
-    <h1 class="test">Hello wolrd!</h1>
+    <img src="./images/logo.svg" alt="logo" class="logo">
+    <div class="card">
+        <div class="card__calculator">
+            <label for="bill" class="card-text">Bill</label>
+            <div class="input-block">
+                <input class="input-form" type="number" min="0.01" step="0.01" placeholder="0" id="bill">
+                <img src="./images/icon-dollar.svg" class="input-icon">
+            </div>
+            <h3 class="card-text">Select Tip %</h3>
+            <div class="tip-form">
+                <input type="button" value="5%" class="tip-button">
+                <input type="button" value="10%" class="tip-button">
+                <input type="button" value="15%" class="tip-button">
+                <input type="button" value="25%" class="tip-button">
+                <input type="button" value="50%" class="tip-button">
+                <input type="number" min="1" step="1" maxlength="2" placeholder="Custom" class="tip-input">
+            </div>
+            <label for="people" class="card-text">Number of People</label>
+            <div class="input-block">
+                <input class="input-form" type="number" min="0.01" step="0.01" placeholder="0" id="people">
+                <img src="./images/icon-person.svg" class="input-icon">
+            </div>
+        </div>
+        <div class="card__conclusion">
+
+        </div>
+    </div>
+
     <script src="./scripts/script.js"></script>
 </body>
 

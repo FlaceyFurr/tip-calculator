@@ -1,1 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Space Mono";
+  background-color: hsl(185deg, 41%, 84%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+  font-family: "Space Mono";
+  outline: none;
+}
+
+.logo {
+  display: flex;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 850px;
+  height: 450px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card__calculator {
+  margin: 25px;
+}
+.card__calculator .card-text {
+  color: hsl(186deg, 14%, 43%);
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.card__calculator .input-block {
+  position: relative;
+  margin-top: 10px;
+}
+.card__calculator .input-block .input-form {
+  background-color: hsl(189deg, 41%, 97%);
+  width: 97%;
+  text-align: right;
+  display: block;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  padding-right: 10px;
+  color: hsl(183deg, 100%, 15%);
+}
+.card__calculator .input-block .input-form:hover {
+  cursor: pointer;
+}
+.card__calculator .input-block .input-form::-moz-placeholder {
+  opacity: 0.5;
+}
+.card__calculator .input-block .input-form::placeholder {
+  opacity: 0.5;
+}
+.card__calculator .input-block .input-form:focus {
+  outline: 2px solid hsl(172deg, 67%, 45%);
+}
+.card__calculator .input-block .input-icon {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+.card__calculator .tip-form {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 15px;
+}
+.card__calculator .tip-form .tip-button {
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  height: 40px;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+}
+.card__calculator .tip-form .tip-button:hover {
+  cursor: pointer;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+.card__calculator .tip-form .tip-input {
+  width: 90%;
+  font-size: 22px;
+  border: none;
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(183deg, 100%, 15%);
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 10px;
+}
+.card__calculator .tip-form .tip-input:hover {
+  cursor: pointer;
+}
+.card__calculator .tip-form .tip-input:focus {
+  outline: 2px solid hsl(172deg, 67%, 45%);
+}
+.card__conclusion {
+  margin: 25px;
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */
