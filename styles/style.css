@@ -124,4 +124,43 @@ input {
   margin: 25px;
   background-color: hsl(183deg, 100%, 15%);
   border-radius: 20px;
+}
+.card__conclusion .conclusion-total {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.card__conclusion .conclusion-total .conclusion-title {
+  font-size: 20px;
+  color: hsl(189deg, 41%, 97%);
+}
+.card__conclusion .conclusion-total .conclusion-subtitle {
+  color: hsl(189deg, 41%, 97%);
+  opacity: 0.5;
+}
+.card__conclusion .conclusion-total .conclusion-price {
+  font-size: 38px;
+  color: hsl(172deg, 67%, 45%);
+}
+.card__conclusion .conclusion-button {
+  text-transform: uppercase;
+  font-family: "Space Mono";
+  font-size: 24px;
+  width: 320px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  margin: auto;
+  margin-top: 120px;
+}
+.card__conclusion .conclusion-button:hover {
+  cursor: pointer;
+  background-color: hsl(185deg, 41%, 84%);
 }/*# sourceMappingURL=style.css.map */

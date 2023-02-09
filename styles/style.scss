@@ -147,5 +147,53 @@ input {
     margin: 25px;
     background-color: $veryDarkCyan;
     border-radius: 20px;
+
+    .conclusion-total {
+      display: flex;
+      width: 80%;
+      margin: auto {
+        top: 40px;
+      }
+      justify-content: space-between;
+
+      .conclusion-title {
+        font-size: 20px;
+        color: $veryLightGrayishCyan;
+      }
+
+      .conclusion-subtitle {
+        color: $veryLightGrayishCyan;
+        opacity: 0.5;
+      }
+
+      .conclusion-price {
+        font-size: 38px;
+        color: $strongCyan;
+      }
+
+    }
+
+    .conclusion-button {
+      text-transform: uppercase;
+      font-family: $mainFonts;
+      font-size: 24px;
+      width: 320px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: none;
+      background-color: $strongCyan;
+      color: $veryDarkCyan;
+      margin: auto {
+        top: 120px
+      };
+
+      &:hover {
+        cursor: pointer;
+        background-color: $lightGrayishCyan;
+      }
+    }
   }
 }
