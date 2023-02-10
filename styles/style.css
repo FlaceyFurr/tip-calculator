@@ -163,4 +163,88 @@ input {
 .card__conclusion .conclusion-button:hover {
   cursor: pointer;
   background-color: hsl(185deg, 41%, 84%);
+}
+
+/* Adaptive */
+@media (max-width: 950px) {
+  .card {
+    width: 650px;
+  }
+  .card__calculator .card-text {
+    font-size: 16px;
+  }
+  .card__calculator .input-block .input-form {
+    font-size: 18px;
+  }
+  .card .tip-form .tip-button {
+    font-size: 20px;
+  }
+  .card .tip-form .tip-input {
+    font-size: 18px;
+  }
+  .card__conclusion .conclusion-total .conclusion-title {
+    font-size: 16px;
+  }
+  .card__conclusion .conclusion-total .conclusion-price {
+    font-size: 26px;
+  }
+  .card__conclusion .conclusion-button {
+    width: 240px;
+    margin: auto;
+    margin-top: 150px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 680px) {
+  .logo {
+    margin: auto;
+    margin-top: 50px;
+  }
+  .card {
+    width: 420px;
+    height: 700px;
+    grid-template-columns: 1fr;
+  }
+  .card__calculator .card-text {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .card__calculator .tip-form {
+    margin-bottom: 20px;
+  }
+  .card__calculator .tip-form .tip-button {
+    font-size: 20px;
+  }
+  .card__conclusion .conclusion-button {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .card {
+    width: 300px;
+    height: 750px;
+  }
+  .card__calculator {
+    margin: 15px;
+  }
+  .card__calculator .tip-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card__conclusion {
+    margin: 15px;
+  }
+  .card__conclusion .conclusion-total .conclusion-title {
+    font-size: 14px;
+  }
+  .card__conclusion .conclusion-total .conclusion-subtitle {
+    font-size: 14px;
+  }
+  .card__conclusion .conclusion-total .conclusion-price {
+    font-size: 22px;
+  }
+  .card__conclusion .conclusion-button {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
