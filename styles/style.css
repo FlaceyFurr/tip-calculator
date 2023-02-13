@@ -23,6 +23,10 @@ input {
   outline: none;
 }
 
+button {
+  font-family: "Space Mono";
+}
+
 .logo {
   display: flex;
   margin: auto;
@@ -103,6 +107,10 @@ input {
   cursor: pointer;
   background-color: hsl(172deg, 67%, 45%);
   color: hsl(183deg, 100%, 15%);
+}
+.card__calculator .tip-form .tip-button.clicked {
+  background-color: hsl(172deg, 67%, 45%);
+  transition: 0.3s;
 }
 .card__calculator .tip-form .tip-input {
   width: 90%;

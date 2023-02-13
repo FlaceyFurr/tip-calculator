@@ -36,6 +36,10 @@ input {
   outline: none;
 }
 
+button {
+  font-family: $mainFonts;
+}
+
 .logo {
   display: flex;
   margin: auto {
@@ -119,6 +123,11 @@ input {
           cursor: pointer;
           background-color: $strongCyan;
           color: $veryDarkCyan;
+        }
+
+        &.clicked {
+          background-color: $strongCyan;
+          transition: 0.3s;
         }
       }
 
