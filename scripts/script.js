@@ -8,7 +8,6 @@ bill.addEventListener("change", function () {
 var tipButton = document.querySelectorAll(".tip-button");
 var selectedButton = null;
 var tipPercentage = 0;
-var customTipButton = document.querySelector("#tip6");
 /* People */
 var people = document.querySelector("#people");
 people.value = "";
@@ -51,3 +50,33 @@ for (var _i = 0, tipButton_1 = tipButton; _i < tipButton_1.length; _i++) {
     var button = tipButton_1[_i];
     _loop_1(button);
 }
+/* Reset Button */
+var resetButton = document.querySelector("#reset");
+var checkResetButton = function () {
+    if (bill.value !== "" || people.value !== "") {
+        resetButton.style.backgroundColor = "";
+        resetButton.style.cursor = "";
+    }
+    else {
+        resetButton.style.backgroundColor = "hsl(172, 67%, 45%, 0.3)";
+        resetButton.style.cursor = "not-allowed";
+    }
+};
+resetButton.addEventListener("click", function (event) {
+    if (bill.value === "" && people.value === "") {
+        event.preventDefault();
+    }
+    else {
+        bill.value = "";
+        people.value = "";
+        for (var _i = 0, tipButton_3 = tipButton; _i < tipButton_3.length; _i++) {
+            var button = tipButton_3[_i];
+            button.classList.remove("clicked");
+        }
+        tipResult();
+        totalResult();
+    }
+    checkResetButton();
+});
+bill.addEventListener("change", checkResetButton);
+people.addEventListener("change", checkResetButton);

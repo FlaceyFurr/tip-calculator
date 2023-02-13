@@ -12,8 +12,6 @@ const tipButton: any = document.querySelectorAll(".tip-button");
 let selectedButton = null;
 let tipPercentage = 0;
 
-const customTipButton = document.querySelector("#tip6");
-
 /* People */
 const people: any = document.querySelector("#people");
 people.value = "";
@@ -57,3 +55,34 @@ for (const button of tipButton) {
     totalResult();
   });
 }
+
+/* Reset Button */
+const resetButton: any = document.querySelector("#reset");
+
+const checkResetButton = function () {
+  if (bill.value !== "" || people.value !== "") {
+    resetButton.style.backgroundColor = "";
+    resetButton.style.cursor = "";
+  } else {
+    resetButton.style.backgroundColor = "hsl(172, 67%, 45%, 0.3)";
+    resetButton.style.cursor = "not-allowed";
+  }
+};
+
+resetButton.addEventListener("click", function (event) {
+  if (bill.value === "" && people.value === "") {
+    event.preventDefault();
+  } else {
+    bill.value = "";
+    people.value = "";
+    for (const button of tipButton) {
+      button.classList.remove("clicked");
+    }
+    tipResult();
+    totalResult();
+  }
+  checkResetButton();
+});
+
+bill.addEventListener("change", checkResetButton);
+people.addEventListener("change", checkResetButton);
