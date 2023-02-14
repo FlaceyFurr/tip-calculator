@@ -256,4 +256,11 @@ button {
   .card__conclusion .conclusion-button {
     font-size: 20px;
   }
+}
+/* Adaptive height */
+@media (max-height: 750px) {
+  .logo {
+    margin: auto;
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

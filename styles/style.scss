@@ -327,3 +327,12 @@ button {
     }
   }
 }
+
+/* Adaptive height */
+@media (max-height: 750px) {
+  .logo {
+    margin: auto {
+      top: 50px;
+    }
+  }
+}
